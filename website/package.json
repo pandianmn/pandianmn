@@ -1,7 +1,7 @@
 {
-  "name": "cojocarudavid-me",
+  "name": "pandianmn-portfolio",
   "type": "module",
-  "version": "2.0.1",
+  "version": "1.0.0",
   "license": "MIT",
   "private": false,
   "engines": {
@@ -10,12 +10,12 @@
   "browserslist": "> 0.25%, not dead",
   "repository": {
     "type": "git",
-    "url": "https://github.com/cojocaru-david/cojocarudavid.me.git"
+    "url": "https://github.com/pandianmn/pandianmn.git"
   },
   "bugs": {
-    "url": "https://github.com/cojocaru-david/cojocarudavid.me/issues"
+    "url": "https://github.com/pandianmn/pandianmn/issues"
   },
-  "homepage": "https://cojocarudavid.me",
+  "homepage": "https://pandianmn.github.io/pandianmn",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
