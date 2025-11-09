@@ -1,11 +1,11 @@
-export const tag: string = "@cojocaru-david";
-export const author: string = "David Cojocaru";
-export const github: string = "https://github.com/cojocaru-david";
+export const tag: string = "@pandianmn";
+export const author: string = "Pandian Muninathan";
+export const github: string = "https://github.com/pandianmn";
 
-export const title: string = "David Cojocaru - Junior Software Developer";
+export const title: string = "Pandian Muninathan - Senior Data Engineer";
 export const description: string =
-  "I am a self-taught developer who loves to build things for the web. With 5+ years of coding experience, I'm passionate about creating elegant solutions and exploring new technologies. Currently working on exciting projects while remaining open to new opportunities.";
-export const country: string = "Romania";
+  "I build automated data extraction systems that scale. From web scraping frameworks to LLM-powered processing pipelines, I create solutions that handle millions of records with precision.";
+export const country: string = "India";
 
 export const FooterSocials = [
   {
@@ -15,12 +15,12 @@ export const FooterSocials = [
   },
   {
     name: "LinkedIn",
-    url: "https://www.linkedin.com/in/cojocaru-david/",
+    url: "https://www.linkedin.com/in/pandianmuninathan/?originalSubdomain=in",
     icon: "mdi:linkedin",
   },
   {
     name: "Email",
-    url: "mailto:contact@cojocarudavid.me",
+    url: "mailto:pandian.m@hotmail.com",
     icon: "mdi:email",
   },
 ];
@@ -36,23 +36,26 @@ interface Meta {
 }
 
 export const defaultMeta: Meta = {
-  title: "David Cojocaru - Home",
+  title: "Pandian Muninathan - Home",
   description:
-    "Discover the portfolio and blog of David Cojocaru, a 16-year-old software developer and cybersecurity enthusiast from Romania. Explore his expertise in web development, programming languages, and more.",
+    "Discover the portfolio of Pandian Muninathan, a Senior Data Engineer with 8+ years of experience building scalable data solutions. Explore expertise in web scraping, automation, LLMs, and data engineering.",
   keywords: [
-    "david cojocaru",
-    "junior software developer",
-    "junior",
-    "cybersecurity enthusiast",
-    "web development",
-    "programming",
+    "pandian muninathan",
+    "senior data engineer",
+    "data engineer",
+    "web scraping",
+    "python developer",
+    "scrapy",
+    "aws",
+    "automation",
+    "llm",
+    "data extraction",
     "portfolio",
-    "blog",
-    "romania",
+    "india",
   ],
   ogImage: {
     src: "/banner.png",
-    alt: "David Cojocaru - Home",
+    alt: "Pandian Muninathan - Home",
   },
 };
 
@@ -62,55 +65,54 @@ export interface Category {
 }
 
 export type Technologies = {
-  "Web Development": Category[];
-  "Development Tools": Category[];
-  "Hosting and Cloud Services": Category[];
+  "Programming Languages": Category[];
+  "Data Engineering & Web Scraping": Category[];
+  "Cloud & Infrastructure": Category[];
+  "Databases": Category[];
+  "DevOps & Monitoring": Category[];
+  "AI & Machine Learning": Category[];
+  "Message Queues & Caching": Category[];
   "Operating Systems": Category[];
-  "Other Programming Languages and Technologies": Category[];
-  "Web Servers": Category[];
-  Databases: Category[];
-  "Other Software": Category[];
 };
 
 export const technologies: Technologies = {
-  "Web Development": [
-    { text: "HTML", logo: "mdi:language-html5" },
+  "Programming Languages": [
+    { text: "Python", logo: "mdi:language-python" },
     { text: "JavaScript", logo: "mdi:language-javascript" },
-    { text: "CSS", logo: "mdi:language-css3" },
-    { text: "PHP", logo: "mdi:language-php" },
-    { text: "Astro", logo: "simple-icons:astro" },
-    { text: "Tailwind CSS", logo: "mdi:tailwind" },
   ],
-  "Development Tools": [
-    { text: "Visual Studio Code", logo: "mdi:visual-studio-code" },
+  "Data Engineering & Web Scraping": [
+    { text: "Scrapy", logo: "simple-icons:scrapy" },
+    { text: "Playwright", logo: "simple-icons:playwright" },
+    { text: "Selenium", logo: "simple-icons:selenium" },
+    { text: "Django", logo: "simple-icons:django" },
+    { text: "Flask", logo: "simple-icons:flask" },
+  ],
+  "Cloud & Infrastructure": [
+    { text: "AWS", logo: "mdi:aws" },
+    { text: "Docker", logo: "mdi:docker" },
+    { text: "Kubernetes", logo: "mdi:kubernetes" },
+  ],
+  "Databases": [
+    { text: "PostgreSQL", logo: "simple-icons:postgresql" },
+    { text: "MongoDB", logo: "simple-icons:mongodb" },
+  ],
+  "DevOps & Monitoring": [
+    { text: "Prometheus", logo: "simple-icons:prometheus" },
+    { text: "Grafana", logo: "simple-icons:grafana" },
+    { text: "Jenkins", logo: "simple-icons:jenkins" },
     { text: "Git", logo: "mdi:git" },
   ],
-  "Hosting and Cloud Services": [
-    { text: "DigitalOcean", logo: "mdi:digital-ocean" },
-    { text: "Cloudflare", logo: "cib:cloudflare" },
-    { text: "Netlify", logo: "cib:netlify" },
+  "AI & Machine Learning": [
+    { text: "OpenAI API", logo: "simple-icons:openai" },
+    { text: "NLP", logo: "mdi:brain" },
+    { text: "LLMs", logo: "mdi:robot" },
+  ],
+  "Message Queues & Caching": [
+    { text: "Redis", logo: "simple-icons:redis" },
+    { text: "Celery", logo: "simple-icons:celery" },
   ],
   "Operating Systems": [
-    { text: "Windows", logo: "mdi:windows" },
+    { text: "Linux", logo: "mdi:linux" },
     { text: "Ubuntu", logo: "mdi:ubuntu" },
-  ],
-  "Other Programming Languages and Technologies": [
-    { text: "Lua", logo: "mdi:language-lua" },
-    { text: "Golang", logo: "mdi:language-go" },
-    { text: "Node.js", logo: "mdi:nodejs" },
-  ],
-  "Web Servers": [
-    { text: "Apache", logo: "cib:apache" },
-    { text: "Nginx", logo: "cib:nginx" },
-  ],
-  Databases: [
-    { text: "MySQL", logo: "cib:mysql" },
-    { text: "MongoDB", logo: "cib:mongodb" },
-  ],
-  "Other Software": [
-    { text: "Discord", logo: "mdi:discord" },
-    { text: "Spotify", logo: "mdi:spotify" },
-    { text: "Visual Studio", logo: "mdi:visual-studio" },
-    { text: "Brave", logo: "cib:brave" },
   ],
 };
