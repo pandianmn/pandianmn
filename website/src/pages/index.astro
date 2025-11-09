@@ -4,7 +4,8 @@ import PageHead from '@/components/PageHead.astro'
 import BlogCard from '@/components/react/blog-card'
 import Skills from '@/components/react/skills'
 import { buttonVariants } from '@/components/ui/button'
-import Logo from '@/components/ui/logo'
+import { Image } from 'astro:assets'
+import authorImage from '@/assets/me.png'
 import Layout from '@/layouts/Layout.astro'
 import { getRecentPosts } from '@/lib/data-utils'
 import { SITE } from '@/consts'
@@ -14,14 +15,19 @@ const currentUrl = Astro.url;
 ---
 
 <Layout canonicalUrl={currentUrl}>
-  <PageHead slot="head" title="Junior Full Stack Developer" />
+  <PageHead slot="head" title="Senior Data Engineer" />
   <section class="flex flex-col gap-y-12 px-4 py-8 sm:px-8 lg:px-16">
     <div
       class="flex flex-col items-center text-center sm:flex-row sm:items-start sm:gap-8 sm:text-left"
     >
-      <div class="relative overflow-hidden rounded-lg sm:shrink-0 sm:overflow-hidden sm:rounded-lg">
-        <Logo
-          className="h-auto w-40 object-cover sm:w-48 md:w-56 lg:w-64 "
+      <div class="relative overflow-hidden rounded-lg sm:shrink-0">
+        <Image
+          src={authorImage}
+          alt={SITE.title}
+          loading="eager"
+          width={320}
+          height={320}
+          class="h-auto w-40 object-cover bg-transparent sm:w-48 md:w-56 lg:w-64"
         />
       </div>
       <div class="mt-8 sm:mt-0 sm:max-w-xl">
@@ -36,24 +42,38 @@ const currentUrl = Astro.url;
           >
             I'm from
           </span>
-          <span class="flex items-center gap-1">
+          <span class="flex items-center gap-1 group">
             <span class="text-foreground text-sm font-medium"> {SITE.location}</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 51.18 38.4"
-              class="h-6 w-6 transition-transform duration-500 hover:rotate-12"
+              viewBox="0 0 900 600"
+              class="inline-block h-6 w-6 transition-transform duration-500 group-hover:rotate-12"
               aria-hidden="true"
               role="img"
               focusable="false"
-              aria-labelledby="title"
             >
-              <path
-                d="M17.75 0v38.4H3.03C1.37 38.4 0 37.04 0 35.37V3.03C0 1.36 1.37 0 3.03 0h14.72z"
-                fill="#002b7f"></path>
-              <path fill="#fcd116" d="M37.45 0v38.4h-19.7V0h19.7z"></path>
-              <path
-                d="M37.45 38.4V0h14.72c1.67 0 3.03 1.36 3.03 3.03v32.33c0 1.67-1.37 3.03-3.03 3.03H37.45v.01z"
-                fill="#ce1126"></path>
+              <rect width="900" height="200" fill="#FF9933"/>
+              <rect y="200" width="900" height="200" fill="#FFFFFF"/>
+              <rect y="400" width="900" height="200" fill="#138808"/>
+              <circle cx="450" cy="300" r="60" fill="#000080"/>
+              <circle cx="450" cy="300" r="50" fill="#FFFFFF"/>
+              <circle cx="450" cy="300" r="3.5" fill="#000080"/>
+              <g transform="translate(450, 300)">
+                <g id="spokes">
+                  <line x1="0" y1="0" x2="0" y2="-50" stroke="#000080" stroke-width="2"/>
+                  <line x1="0" y1="0" x2="25" y2="-43.3" stroke="#000080" stroke-width="2"/>
+                  <line x1="0" y1="0" x2="43.3" y2="-25" stroke="#000080" stroke-width="2"/>
+                  <line x1="0" y1="0" x2="50" y2="0" stroke="#000080" stroke-width="2"/>
+                  <line x1="0" y1="0" x2="43.3" y2="25" stroke="#000080" stroke-width="2"/>
+                  <line x1="0" y1="0" x2="25" y2="43.3" stroke="#000080" stroke-width="2"/>
+                  <line x1="0" y1="0" x2="0" y2="50" stroke="#000080" stroke-width="2"/>
+                  <line x1="0" y1="0" x2="-25" y2="43.3" stroke="#000080" stroke-width="2"/>
+                  <line x1="0" y1="0" x2="-43.3" y2="25" stroke="#000080" stroke-width="2"/>
+                  <line x1="0" y1="0" x2="-50" y2="0" stroke="#000080" stroke-width="2"/>
+                  <line x1="0" y1="0" x2="-43.3" y2="-25" stroke="#000080" stroke-width="2"/>
+                  <line x1="0" y1="0" x2="-25" y2="-43.3" stroke="#000080" stroke-width="2"/>
+                </g>
+              </g>
             </svg>
           </span>
         </div>
