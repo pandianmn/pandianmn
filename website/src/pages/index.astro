@@ -2,160 +2,336 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Pandian Muninathan - Senior Data Engineer">
+<Layout title="Pandian Muninathan - Certified Azure Developer | Data Engineer">
   <main>
+    <!-- Hero Section -->
     <section class="hero">
       <div class="container">
-        <h1>Hi, I'm <span class="highlight">Pandian Muninathan</span></h1>
-        <p class="subtitle">Senior Data Engineer specializing in AI-powered data extraction and processing systems</p>
-        <div class="cta-buttons">
-          <a href="#about" class="btn btn-primary">About Me</a>
-          <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+        <div class="hero-content">
+          <h1 class="fade-in">Hi, I'm <span class="highlight">Pandian Muninathan</span></h1>
+          <p class="subtitle slide-in">Certified Microsoft Azure Developer Associate | Python, ETL & Data Engineering, Crawling Specialist | Former Co-Founder, Lapis Data Analytics | Agentic coding</p>
+          <p class="location slide-in">Chennai, Tamil Nadu, India</p>
+          <div class="cta-buttons fade-in-delay">
+            <a href="#about" class="btn btn-primary">About Me</a>
+            <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- Summary Section -->
     <section id="about" class="about">
       <div class="container">
-        <h2>About Me</h2>
-        <div class="about-grid">
-          <div class="about-text">
-            <p>🔭 Currently working as a <strong>Senior Data Engineer at Forage AI</strong></p>
-            <p>🌟 Specializing in <strong>automated data collection, NLP, and Large Language Models</strong></p>
-            <p>🚀 Experience with <strong>web scraping, ETL pipelines, and cloud infrastructure</strong></p>
-            <p>📊 Strong background in <strong>performance engineering and data analytics</strong></p>
-            <p>🎓 Pursuing MCA from <strong>Amrita Vishwa Vidyapeetham</strong></p>
-          </div>
+        <h2 class="section-title">Summary</h2>
+        <div class="about-content">
+          <p class="summary-text">
+            With over 13 years of diverse experience, I have spent the past 8 years specializing in process automation and software engineering, delivering scalable solutions that drive operational excellence. My recent focus has been on leveraging Python, SQL, and automation frameworks to streamline workflows, reduce manual effort, and enhance data-driven decision-making. I bring hands-on expertise in developing scripts, implementing system-based optimizations, and applying automation best practices to meet evolving business needs.
+          </p>
         </div>
       </div>
     </section>
 
-    <section class="experience">
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
       <div class="container">
-        <h2>Key Projects & Achievements</h2>
-        <div class="projects-grid">
-          <div class="project-card">
-            <h3>🤖 AI-Powered Data Engineering</h3>
-            <p class="company">Forage AI</p>
-            <ul>
-              <li>Developed automated workflows for efficient data collection and processing</li>
-              <li>Built comprehensive web scraping framework with quality controls</li>
-              <li>Implemented NLP and LLMs for advanced data extraction</li>
-              <li>Created data cleansing and validation procedures</li>
+        <h2 class="section-title">Professional Experience</h2>
+
+        <!-- Forage AI -->
+        <div class="experience-item">
+          <div class="experience-header">
+            <div>
+              <h3>Forage AI</h3>
+              <p class="duration">2 years 11 months</p>
+            </div>
+          </div>
+
+          <div class="role">
+            <h4>Senior Data Engineer</h4>
+            <p class="role-date">January 2024 - Present (1 year 11 months) • Contract</p>
+            <ul class="achievements">
+              <li>Developed automated workflows for efficient data collection and ingestion</li>
+              <li>Crafted a framework for web scraping, ensuring consistent data quality from various sources</li>
+              <li>Implemented procedures to cleanse and rectify inconsistencies in datasets</li>
+              <li>Leveraged NLP techniques to parse and extract relevant information from diverse sources</li>
+              <li>Utilized Large Language Models for advanced data extraction from complex content</li>
+              <li>Worked with cross-functional teams to align data needs with extraction solutions</li>
+              <li>Regularly updated and refined data processing methodologies</li>
             </ul>
           </div>
 
-          <div class="project-card">
-            <h3>📈 Performance Engineering</h3>
-            <p class="company">Sky UK via TCS</p>
-            <ul>
-              <li>Developed API performance monitoring systems</li>
-              <li>Implemented Prometheus and Grafana dashboards</li>
-              <li>Managed CI/CD pipelines for containerized tests</li>
-              <li>Led investigation and resolution of performance issues</li>
+          <div class="role">
+            <h4>Data Engineer</h4>
+            <p class="role-date">January 2023 - January 2024 (1 year 1 month) • Contract</p>
+            <ul class="achievements">
+              <li>Data Automation: Developed automated workflows for efficient data collection and ingestion</li>
+              <li>Web Scraping Framework: Crafted a framework for web scraping, ensuring consistent data quality</li>
+              <li>Data Cleaning: Implemented procedures to cleanse and rectify inconsistencies in datasets</li>
+              <li>NLP Integration: Leveraged NLP techniques to parse and extract relevant information</li>
+              <li>LLMs Use: Utilized Large Language Models for advanced data extraction from complex content</li>
+              <li>Collaboration: Worked with cross-functional teams to align data needs with extraction solutions</li>
+              <li>Optimization: Regularly updated and refined data processing methodologies</li>
+              <li>Documentation: Maintained detailed records of developed processes for future reference</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- TCS -->
+        <div class="experience-item">
+          <div class="experience-header">
+            <div>
+              <h3>Tata Consultancy Services</h3>
+              <p class="role-date">January 2022 - January 2023 (1 year 1 month)</p>
+            </div>
+          </div>
+
+          <div class="role">
+            <h4>Performance Engineer - SKY</h4>
+            <p class="location-text">Chennai, Tamil Nadu, India</p>
+            <ul class="achievements">
+              <li>Engaged in the development and testing within the established framework for overseeing API performance</li>
+              <li>Acquired hands-on expertise with Prometheus and Grafana dashboards for performance monitoring</li>
+              <li>Monitored and maintained numerous CI/CD pipeline applications running containerized performance tests</li>
+              <li>Troubleshot application issues by analyzing logs and inspecting resources in containers/VMs</li>
+              <li>Collaborated closely with engineers and squads to test new services and enhance processes</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Lapis Data Analytics -->
+        <div class="experience-item">
+          <div class="experience-header">
+            <div>
+              <h3>Lapis Data Analytics</h3>
+              <p class="role-date">January 2021 - January 2022 (1 year 1 month)</p>
+            </div>
+          </div>
+
+          <div class="role">
+            <h4>Co-founder | Lead Python Developer | Data Engineer</h4>
+            <p class="location-text">Chennai, Tamil Nadu, India</p>
+            <ul class="achievements">
+              <li>Spearheading projects based on Python</li>
+              <li>Tasked with management of company's data, security measures, maintenance, and network operations</li>
+              <li>Engaging in evaluation and implementation of new technological advancements</li>
+              <li>Guaranteeing efficient, profitable, and secure application of technologies</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Zudo Innovations -->
+        <div class="experience-item">
+          <div class="experience-header">
+            <div>
+              <h3>Zudo Innovations (Edvoy)</h3>
+              <p class="role-date">December 2019 - December 2020 (1 year 1 month)</p>
+            </div>
+          </div>
+
+          <div class="role">
+            <h4>Senior Data Analyst | Python Developer</h4>
+            <p class="location-text">Chennai Area, India</p>
+            <ul class="achievements">
+              <li>Conceived and executed Scrapy-based framework for large-scale data collection from hundreds of university/college websites</li>
+              <li>Incorporated browser rendering technology, simplifying developer tasks</li>
+              <li>Created NoSQL-based backend for efficient data storage and retrieval</li>
+              <li>Implemented web-based schedulers and cloud deployment for running programs in the cloud</li>
+              <li>Built specialized dashboards and data tagging algorithms for data audit team</li>
+              <li>Led a compact team of developers</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- MeritGroup -->
+        <div class="experience-item">
+          <div class="experience-header">
+            <div>
+              <h3>MeritGroup</h3>
+              <p class="duration">6 years 2 months</p>
+            </div>
+          </div>
+
+          <div class="role">
+            <h4>Senior Software Engineer</h4>
+            <p class="role-date">January 2019 - December 2019 (1 year)</p>
+            <p class="location-text">Chennai Area, India</p>
+            <ul class="achievements">
+              <li>Crafted Python programs using open-source frameworks for data extraction from PDFs</li>
+              <li>Managed and housed data in SQL/MySQL databases, performing ETL tasks</li>
+              <li>Gained experience with Cloud Compute, Serverless, Docker, Proxy Servers, and Cloud Object Storage</li>
+              <li>Engaged with clients, BST, and Operations to gather requirements and deliver tailored solutions</li>
+              <li>Boosted operational efficiency through automation of report generation and auto-email programs</li>
+              <li>Coordinated with stakeholders to gather and vet news for accuracy before client communication</li>
             </ul>
           </div>
 
-          <div class="project-card">
-            <h3>📊 Data Analytics Solutions</h3>
-            <p class="company">Various Projects</p>
-            <ul>
-              <li>Designed ETL solution for EdTech company</li>
-              <li>Created automated data collection framework for defence studies</li>
-              <li>Developed web scraping system for 100+ university websites</li>
-              <li>Built web-based dashboards for data exploration</li>
+          <div class="role">
+            <h4>Software Engineer</h4>
+            <p class="role-date">April 2017 - December 2018 (1 year 9 months)</p>
+            <p class="location-text">Chennai Area, India</p>
+            <ul class="achievements">
+              <li>Developed Python-based scraper/crawler programs for data collection and evaluation</li>
+              <li>Managed and stored data in SQL and MySQL databases</li>
+              <li>Worked on ETL based on project and operational requirements</li>
+            </ul>
+          </div>
+
+          <div class="role">
+            <h4>Shift Lead</h4>
+            <p class="role-date">April 2015 - March 2017 (2 years)</p>
+            <p class="location-text">Chennai Area, India</p>
+            <ul class="achievements">
+              <li>Spearheaded team efforts in ensuring seamless implementation of lead generation projects</li>
+              <li>Guided team members in managing various project phases based on client specifications</li>
+              <li>Developed and maintained detailed project plans to align and allocate resources</li>
+              <li>Generated and updated status reports highlighting project progress</li>
+            </ul>
+          </div>
+
+          <div class="role">
+            <h4>Research Analyst</h4>
+            <p class="role-date">November 2013 - March 2015 (1 year 5 months)</p>
+            <p class="location-text">Chennai Area, India</p>
+            <ul class="achievements">
+              <li>Undertook strategic market research focusing on competitive and industry factors</li>
+              <li>Employed specialized marketing campaign tools to generate leads across APAC and EMEA regions</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Reliance Communications -->
+        <div class="experience-item">
+          <div class="experience-header">
+            <div>
+              <h3>Reliance Communications Infrastructure Pvt. Ltd.</h3>
+              <p class="role-date">June 2012 - June 2013 (1 year 1 month)</p>
+            </div>
+          </div>
+
+          <div class="role">
+            <h4>Customer Service Executive</h4>
+            <p class="location-text">Chennai Area, India</p>
+            <ul class="achievements">
+              <li>Addressed client inquiries and concerns via email per organizational policies</li>
+              <li>Elevated crucial issues to relevant stakeholders following escalation matrix</li>
+              <li>Delivered process-oriented training to team members and new hires</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="skills">
+    <!-- Education Section -->
+    <section id="education" class="education">
       <div class="container">
-        <h2>Technical Expertise</h2>
-        <div class="skills-grid">
-          <div class="skill-category">
-            <h3>Data Engineering</h3>
-            <div class="skill-tags">
-              <span class="tag">ETL</span>
-              <span class="tag">Data Pipelines</span>
-              <span class="tag">Web Scraping</span>
-              <span class="tag">Data Quality</span>
-            </div>
+        <h2 class="section-title">Education</h2>
+
+        <div class="education-grid">
+          <div class="education-card">
+            <h3>Amrita Vishwa Vidyapeetham</h3>
+            <p class="degree">Master of Computer Applications - MCA</p>
+            <p class="edu-date">October 2023 - April 2026</p>
           </div>
-          <div class="skill-category">
-            <h3>Cloud Platforms</h3>
-            <div class="skill-tags">
-              <span class="tag">AWS</span>
-              <span class="tag">Azure</span>
-              <span class="tag">Google Cloud</span>
-            </div>
+
+          <div class="education-card">
+            <h3>DRBCCC Hindu College - India</h3>
+            <p class="degree">Bachelor of Computer Applications</p>
+            <p class="degree-detail">Computer Applications</p>
+            <p class="edu-date">2009 - 2012</p>
           </div>
-          <div class="skill-category">
-            <h3>Databases</h3>
-            <div class="skill-tags">
-              <span class="tag">MongoDB</span>
-              <span class="tag">PostgreSQL</span>
-              <span class="tag">MySQL</span>
-              <span class="tag">Redis</span>
-            </div>
-          </div>
-          <div class="skill-category">
-            <h3>Tools & Technologies</h3>
-            <div class="skill-tags">
-              <span class="tag">Python</span>
-              <span class="tag">Docker</span>
-              <span class="tag">Jenkins</span>
-              <span class="tag">Grafana</span>
-              <span class="tag">Prometheus</span>
-            </div>
+
+          <div class="education-card">
+            <h3>Vijayanta Model Higher Secondary School</h3>
+            <p class="degree">Higher Secondary Education</p>
+            <p class="degree-detail">Computer Science</p>
+            <p class="edu-date">2007 - 2009</p>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Certifications Section -->
     <section class="certifications">
       <div class="container">
-        <h2>Professional Certifications</h2>
+        <h2 class="section-title">Professional Certifications</h2>
         <div class="cert-grid">
           <div class="cert-card">
-            <div class="cert-icon">☁️</div>
-            <h3>Azure Developer Associate</h3>
-            <p>Microsoft</p>
+            <div class="cert-content">
+              <h3>Generative AI Engineering with LLMs</h3>
+            </div>
           </div>
           <div class="cert-card">
-            <div class="cert-icon">🌐</div>
-            <h3>Google Cloud Computing Foundations</h3>
-            <p>Google Cloud</p>
+            <div class="cert-content">
+              <h3>Postgraduate Certificate in Big Data</h3>
+            </div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-content">
+              <h3>Microsoft Certified: Azure Developer Associate</h3>
+            </div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-content">
+              <h3>Google Cloud Computing Foundations Certificate</h3>
+            </div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-content">
+              <h3>Generative AI with Large Language Models</h3>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Languages Section -->
+    <section class="languages">
+      <div class="container">
+        <h2 class="section-title">Languages</h2>
+        <div class="languages-grid">
+          <div class="language-card">
+            <h3>Tamil</h3>
+            <p>Native or Bilingual</p>
+          </div>
+          <div class="language-card">
+            <h3>English</h3>
+            <p>Professional Working</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
     <section id="contact" class="contact">
       <div class="container">
-        <h2>Let's Connect</h2>
+        <h2 class="section-title">Let's Connect</h2>
         <p class="contact-text">Interested in collaboration or have a project in mind? Feel free to reach out!</p>
-        <div class="social-links">
-          <a href="https://twitter.com/pandian_mn" target="_blank" rel="noopener noreferrer" class="social-link">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+        <div class="contact-info">
+          <div class="contact-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
             </svg>
-            Twitter
-          </a>
-          <a href="https://github.com/pandianmn" target="_blank" rel="noopener noreferrer" class="social-link">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            <a href="tel:+917845208290">+91 7845208290</a>
+          </div>
+          <div class="contact-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
             </svg>
-            GitHub
-          </a>
+            <a href="mailto:pandian.m@hotmail.com">pandian.m@hotmail.com</a>
+          </div>
+          <div class="contact-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+            <a href="https://www.linkedin.com/in/pandianmuninathan" target="_blank" rel="noopener noreferrer">linkedin.com/in/pandianmuninathan</a>
+          </div>
         </div>
       </div>
     </section>
 
     <footer>
       <div class="container">
-        <p>&copy; 2024 Pandian Muninathan. Built with Astro.</p>
+        <p>&copy; 2025 Pandian Muninathan. All rights reserved.</p>
       </div>
     </footer>
   </main>
@@ -166,31 +342,102 @@ import Layout from '../layouts/Layout.astro';
     }
 
     section {
-      padding: 4rem 0;
+      padding: 5rem 0;
+      position: relative;
+      overflow: hidden;
     }
 
+    section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--primary), transparent);
+      animation: slideRight 3s ease-in-out infinite;
+    }
+
+    @keyframes slideRight {
+      0%, 100% {
+        left: -100%;
+      }
+      50% {
+        left: 100%;
+      }
+    }
+
+    /* Hero Section */
     .hero {
-      min-height: 80vh;
+      min-height: 90vh;
       display: flex;
       align-items: center;
-      background: linear-gradient(135deg, var(--bg) 0%, var(--bg-secondary) 100%);
+      background: var(--bg);
+      position: relative;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: var(--border);
+    }
+
+    .hero-content {
+      max-width: 900px;
     }
 
     .hero h1 {
-      font-size: clamp(2rem, 5vw, 3.5rem);
-      margin-bottom: 1rem;
-      font-weight: 700;
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      margin-bottom: 1.5rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
     }
 
     .highlight {
       color: var(--primary);
+      position: relative;
+      display: inline-block;
+    }
+
+    .highlight::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: var(--primary);
+      animation: pulse 2s ease-in-out infinite;
     }
 
     .subtitle {
-      font-size: clamp(1.1rem, 2vw, 1.3rem);
+      font-size: clamp(1.1rem, 2.5vw, 1.4rem);
       color: var(--text-light);
-      margin-bottom: 2rem;
-      max-width: 700px;
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+
+    .location {
+      font-size: 1.1rem;
+      color: var(--text-light);
+      margin-bottom: 2.5rem;
+    }
+
+    .fade-in {
+      animation: fadeInUp 0.8s ease-out;
+    }
+
+    .slide-in {
+      animation: slideIn 0.8s ease-out 0.2s backwards;
+    }
+
+    .fade-in-delay {
+      animation: fadeInUp 0.8s ease-out 0.4s backwards;
     }
 
     .cta-buttons {
@@ -200,23 +447,44 @@ import Layout from '../layouts/Layout.astro';
     }
 
     .btn {
-      padding: 0.75rem 1.5rem;
-      border-radius: 0.5rem;
+      padding: 1rem 2rem;
+      border-radius: 0;
       text-decoration: none;
-      font-weight: 600;
+      font-weight: 700;
       transition: all 0.3s ease;
       display: inline-block;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 0.9rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.1);
+      transition: left 0.3s ease;
+    }
+
+    .btn:hover::before {
+      left: 100%;
     }
 
     .btn-primary {
       background: var(--primary);
-      color: white;
+      color: var(--secondary);
+      border: 2px solid var(--primary);
     }
 
     .btn-primary:hover {
       background: var(--primary-dark);
-      transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
     }
 
     .btn-secondary {
@@ -227,190 +495,456 @@ import Layout from '../layouts/Layout.astro';
 
     .btn-secondary:hover {
       background: var(--primary);
-      color: white;
-      transform: translateY(-2px);
+      color: var(--secondary);
+      transform: translateY(-3px);
     }
 
-    h2 {
-      font-size: clamp(1.8rem, 4vw, 2.5rem);
-      margin-bottom: 2rem;
-      font-weight: 700;
+    /* Section Titles */
+    .section-title {
+      font-size: clamp(2rem, 5vw, 3rem);
+      margin-bottom: 3rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: -0.02em;
+      position: relative;
+      display: inline-block;
     }
 
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 60px;
+      height: 4px;
+      background: var(--primary);
+    }
+
+    /* About Section */
     .about {
-      background: var(--bg);
-    }
-
-    .about-text p {
-      margin-bottom: 1rem;
-      font-size: 1.1rem;
-    }
-
-    .experience {
       background: var(--bg-secondary);
     }
 
-    .projects-grid {
+    .summary-text {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      color: var(--text);
+      max-width: 900px;
+      text-align: justify;
+    }
+
+    /* Experience Section */
+    .experience {
+      background: var(--bg);
+    }
+
+    .experience-item {
+      margin-bottom: 3rem;
+      padding: 2.5rem;
+      background: var(--bg-secondary);
+      border-left: 4px solid var(--primary);
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .experience-item::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 0;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.02);
+      transition: width 0.3s ease;
+    }
+
+    .experience-item:hover::before {
+      width: 100%;
+    }
+
+    .experience-item:hover {
+      transform: translateX(10px);
+      box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .experience-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .experience-item h3 {
+      font-size: 1.8rem;
+      font-weight: 800;
+      margin-bottom: 0.5rem;
+      color: var(--primary);
+    }
+
+    .duration {
+      font-size: 1rem;
+      color: var(--text-light);
+      font-weight: 600;
+    }
+
+    .role {
+      margin-top: 2rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .role:first-child {
+      margin-top: 0;
+      padding-top: 0;
+      border-top: none;
+    }
+
+    .role h4 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .role-date {
+      color: var(--text-light);
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+
+    .location-text {
+      color: var(--text-light);
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+
+    .achievements {
+      list-style: none;
+      margin-left: 0;
+    }
+
+    .achievements li {
+      padding-left: 1.8rem;
+      position: relative;
+      margin-bottom: 0.8rem;
+      line-height: 1.6;
+      transition: all 0.2s ease;
+    }
+
+    .achievements li:hover {
+      color: var(--primary);
+      transform: translateX(5px);
+    }
+
+    .achievements li::before {
+      content: "▸";
+      position: absolute;
+      left: 0;
+      color: var(--primary);
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    /* Education Section */
+    .education {
+      background: var(--bg-secondary);
+    }
+
+    .education-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 2rem;
     }
 
-    .project-card {
+    .education-card {
       background: var(--bg);
       padding: 2rem;
-      border-radius: 1rem;
-      border: 1px solid var(--border);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .project-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    }
-
-    .project-card h3 {
-      font-size: 1.3rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .company {
-      color: var(--primary);
-      font-weight: 600;
-      margin-bottom: 1rem;
-    }
-
-    .project-card ul {
-      list-style: none;
-      margin-left: 0;
-    }
-
-    .project-card li {
-      padding-left: 1.5rem;
+      border: 2px solid var(--border);
+      transition: all 0.3s ease;
       position: relative;
-      margin-bottom: 0.5rem;
+      overflow: hidden;
     }
 
-    .project-card li:before {
-      content: "→";
+    .education-card::before {
+      content: '';
       position: absolute;
-      left: 0;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.03), transparent);
+      transition: left 0.5s ease;
+    }
+
+    .education-card:hover::before {
+      left: 100%;
+    }
+
+    .education-card:hover {
+      border-color: var(--primary);
+      transform: translateY(-10px);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    }
+
+    .education-card h3 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
       color: var(--primary);
     }
 
-    .skills {
-      background: var(--bg);
+    .degree {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
     }
 
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
+    .degree-detail {
+      color: var(--text-light);
+      margin-bottom: 0.5rem;
     }
 
-    .skill-category h3 {
-      font-size: 1.2rem;
-      margin-bottom: 1rem;
-    }
-
-    .skill-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-    }
-
-    .tag {
-      background: var(--primary);
-      color: white;
-      padding: 0.4rem 0.8rem;
-      border-radius: 0.5rem;
+    .edu-date {
+      color: var(--text-light);
       font-size: 0.9rem;
-      font-weight: 500;
     }
 
+    /* Certifications Section */
     .certifications {
-      background: var(--bg-secondary);
+      background: var(--bg);
     }
 
     .cert-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 2rem;
     }
 
     .cert-card {
+      background: var(--bg-secondary);
+      padding: 2rem;
+      border: 2px solid var(--primary);
+      transition: all 0.3s ease;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .cert-card::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 4px;
+      background: var(--primary);
+      transition: width 0.3s ease;
+    }
+
+    .cert-card:hover::after {
+      width: 100%;
+    }
+
+    .cert-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      background: var(--bg);
+    }
+
+    .cert-content h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      line-height: 1.4;
+      text-align: center;
+    }
+
+    /* Languages Section */
+    .languages {
+      background: var(--bg-secondary);
+    }
+
+    .languages-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      max-width: 600px;
+    }
+
+    .language-card {
       background: var(--bg);
       padding: 2rem;
-      border-radius: 1rem;
       text-align: center;
-      border: 1px solid var(--border);
+      border: 2px solid var(--border);
+      transition: all 0.3s ease;
     }
 
-    .cert-icon {
-      font-size: 3rem;
-      margin-bottom: 1rem;
+    .language-card:hover {
+      border-color: var(--primary);
+      transform: translateY(-5px);
     }
 
-    .cert-card h3 {
-      font-size: 1.2rem;
+    .language-card h3 {
+      font-size: 1.5rem;
+      font-weight: 700;
       margin-bottom: 0.5rem;
     }
 
+    .language-card p {
+      color: var(--text-light);
+      font-weight: 600;
+    }
+
+    /* Contact Section */
     .contact {
       background: var(--bg);
       text-align: center;
     }
 
     .contact-text {
-      font-size: 1.1rem;
+      font-size: 1.2rem;
       color: var(--text-light);
-      margin-bottom: 2rem;
+      margin-bottom: 3rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
-    .social-links {
+    .contact-info {
       display: flex;
-      gap: 1rem;
-      justify-content: center;
-      flex-wrap: wrap;
+      flex-direction: column;
+      gap: 1.5rem;
+      max-width: 600px;
+      margin: 0 auto;
     }
 
-    .social-link {
+    .contact-item {
       display: flex;
       align-items: center;
-      gap: 0.5rem;
-      padding: 0.75rem 1.5rem;
-      background: var(--primary);
-      color: white;
-      text-decoration: none;
-      border-radius: 0.5rem;
-      font-weight: 600;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1.5rem;
+      background: var(--bg-secondary);
+      border: 2px solid var(--border);
       transition: all 0.3s ease;
     }
 
-    .social-link:hover {
-      background: var(--primary-dark);
-      transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+    .contact-item:hover {
+      border-color: var(--primary);
+      transform: translateX(10px);
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
     }
 
+    .contact-item svg {
+      flex-shrink: 0;
+    }
+
+    .contact-item a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+
+    .contact-item:hover a {
+      color: var(--primary);
+    }
+
+    /* Footer */
     footer {
       background: var(--bg-secondary);
       padding: 2rem 0;
       text-align: center;
       color: var(--text-light);
       border-top: 1px solid var(--border);
+      font-weight: 600;
     }
 
+    /* Responsive Design */
     @media (max-width: 768px) {
       section {
         padding: 3rem 0;
       }
 
-      .projects-grid,
-      .skills-grid,
-      .cert-grid {
+      .hero {
+        min-height: 70vh;
+      }
+
+      .section-title {
+        margin-bottom: 2rem;
+      }
+
+      .experience-item {
+        padding: 1.5rem;
+      }
+
+      .education-grid,
+      .cert-grid,
+      .languages-grid {
         grid-template-columns: 1fr;
       }
+
+      .contact-item {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+    /* Smooth Scroll Offset */
+    section[id] {
+      scroll-margin-top: 2rem;
     }
   </style>
+
+  <script is:inline>
+    // Add intersection observer for scroll animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const target = entry.target;
+          target.style.opacity = '1';
+          target.style.transform = 'translateY(0)';
+        }
+      });
+    }, observerOptions);
+
+    // Observe all cards and items
+    document.addEventListener('DOMContentLoaded', () => {
+      const animatedElements = document.querySelectorAll('.experience-item, .education-card, .cert-card, .language-card');
+
+      animatedElements.forEach(el => {
+        const element = el;
+        element.style.opacity = '0';
+        element.style.transform = 'translateY(30px)';
+        element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        observer.observe(element);
+      });
+    });
+
+    // Add active state to navigation on scroll
+    window.addEventListener('scroll', () => {
+      const sections = document.querySelectorAll('section[id]');
+      const scrollY = window.pageYOffset;
+
+      sections.forEach(section => {
+        const sectionElement = section;
+        const sectionHeight = sectionElement.offsetHeight;
+        const sectionTop = sectionElement.offsetTop - 100;
+        const sectionId = sectionElement.getAttribute('id');
+
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+          document.querySelectorAll(`a[href="#${sectionId}"]`).forEach(link => {
+            const linkElement = link;
+            linkElement.style.color = 'var(--primary)';
+          });
+        }
+      });
+    });
+  </script>
 </Layout>
