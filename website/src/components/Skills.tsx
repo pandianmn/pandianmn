@@ -26,8 +26,6 @@ import {
   SiSpotify,
   SiBrave,
   SiPython,
-  SiScrapy,
-  SiPlaywright,
   SiSelenium,
   SiFlask,
   SiFastapi,
@@ -39,12 +37,10 @@ import {
   SiGrafana,
   SiJenkins,
   SiOpenai,
-  SiAnthropic,
   SiRedis,
-  SiCelery,
   SiLinux,
 } from "react-icons/si";
-import { FileCode, LucideAppWindow, Code } from "lucide-react";
+import { FileCode, LucideAppWindow, Code, Globe, Bot } from "lucide-react";
 
 const iconMap: { [key: string]: IconType } = {
   "mdi:language-html5": SiHtml5,
@@ -53,8 +49,8 @@ const iconMap: { [key: string]: IconType } = {
   "mdi:language-php": SiPhp,
   "mdi:language-python": SiPython,
   "simple-icons:astro": SiAstro,
-  "simple-icons:scrapy": SiScrapy,
-  "simple-icons:playwright": SiPlaywright,
+  "simple-icons:scrapy": Globe,
+  "simple-icons:playwright": Globe,
   "simple-icons:selenium": SiSelenium,
   "simple-icons:flask": SiFlask,
   "simple-icons:fastapi": SiFastapi,
@@ -64,9 +60,9 @@ const iconMap: { [key: string]: IconType } = {
   "simple-icons:grafana": SiGrafana,
   "simple-icons:jenkins": SiJenkins,
   "simple-icons:openai": SiOpenai,
-  "simple-icons:anthropic": SiAnthropic,
+  "simple-icons:anthropic": Bot,
   "simple-icons:redis": SiRedis,
-  "simple-icons:celery": SiCelery,
+  "simple-icons:celery": Code,
   "mdi:tailwind": SiTailwindcss,
   "mdi:git": SiGit,
   "mdi:digital-ocean": SiDigitalocean,
@@ -90,7 +86,7 @@ const iconMap: { [key: string]: IconType } = {
   "mdi:visual-studio-code": FileCode,
   "mdi:windows": LucideAppWindow,
   "mdi:visual-studio": Code,
-  "mdi:robot": Code,
+  "mdi:robot": Bot,
   "mdi:brain": Code,
 };
 
