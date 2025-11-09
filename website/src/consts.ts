@@ -24,9 +24,6 @@ export const NAV_LINKS: SocialLink[] = [
     href: '/certifications',
     label: 'certifications',
   },
-]
-
-export const SOCIAL_LINKS: SocialLink[] = [
   {
     href: '/projects',
     label: 'projects',
