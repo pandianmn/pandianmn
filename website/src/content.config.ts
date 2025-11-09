@@ -1,19 +1,35 @@
-import { defineCollection, z } from "astro:content";
-import { glob } from "astro/loaders";
+import { glob } from 'astro/loaders'
+import { defineCollection, z } from 'astro:content'
 
 const blog = defineCollection({
-  loader: glob({ pattern: "*.{md,mdx}", base: "src/posts" }),
-  schema: ({ image }: { image: () => z.ZodType<any> }) =>
+  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/blog' }),
+  schema: ({ image }) =>
     z.object({
-      title: z.string().max(80).min(10),
-      slug: z.string(),
-      hero: image().optional(),
-      heroAlt: z.string(),
-      description: z.string().max(220).min(110),
-      pubDate: z.date(),
-      updatedDate: z.date().optional(),
-      tags: z.array(z.string()),
+      title: z.string(),
+      slug: z.string().optional(),
+      description: z.string(),
+      pubDate: z.coerce.date(),
+      updatedDate: z.coerce.date().optional(),
+      image: image().optional(),
+      heroAlt: z.string().optional(),
+      tags: z.array(z.string()).default([]),
+      authors: z.array(z.string()).optional(),
+      draft: z.boolean().optional(),
     }),
-});
+})
 
-export const collections = { blog };
+const projects = defineCollection({
+  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/projects' }),
+  schema: ({ image }) =>
+    z.object({
+      name: z.string(),
+      description: z.string(),
+      tags: z.array(z.string()),
+      image: image(),
+      link: z.string().url(),
+      startDate: z.coerce.date().optional(),
+      endDate: z.coerce.date().optional(),
+    }),
+})
+
+export const collections = { blog, projects }
