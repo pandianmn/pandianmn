@@ -44,7 +44,7 @@ import {
   SiCelery,
   SiLinux,
 } from "react-icons/si";
-import { FileCode, LucideAppWindow, Code } from "lucide-react";
+import { FileCode, LucideAppWindow, Code, Globe, Bot } from "lucide-react";
 
 const iconMap: { [key: string]: IconType } = {
   "mdi:language-html5": SiHtml5,
