@@ -78,14 +78,13 @@ export type Technologies = {
 export const technologies: Technologies = {
   "Programming Languages": [
     { text: "Python", logo: "mdi:language-python" },
-    { text: "JavaScript", logo: "mdi:language-javascript" },
   ],
   "Data Engineering & Web Scraping": [
     { text: "Scrapy", logo: "simple-icons:scrapy" },
     { text: "Playwright", logo: "simple-icons:playwright" },
     { text: "Selenium", logo: "simple-icons:selenium" },
-    { text: "Django", logo: "simple-icons:django" },
     { text: "Flask", logo: "simple-icons:flask" },
+    { text: "FastAPI", logo: "simple-icons:fastapi" },
   ],
   "Cloud & Infrastructure": [
     { text: "AWS", logo: "mdi:aws" },
@@ -104,8 +103,8 @@ export const technologies: Technologies = {
   ],
   "AI & Machine Learning": [
     { text: "OpenAI API", logo: "simple-icons:openai" },
-    { text: "NLP", logo: "mdi:brain" },
     { text: "LLMs", logo: "mdi:robot" },
+    { text: "Claude Code", logo: "simple-icons:anthropic" },
   ],
   "Message Queues & Caching": [
     { text: "Redis", logo: "simple-icons:redis" },

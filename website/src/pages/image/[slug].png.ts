@@ -47,14 +47,14 @@ export async function GET(context: APIContext) {
         tw="w-full h-1/5 border-t border-neutral-700/50 flex p-10 items-center justify-between text-2xl"
       >
         <div tw="flex items-center">
-          <span tw="ml-3 text-neutral-500">cojocarudavid.me</span>
+          <span tw="ml-3 text-neutral-500">pandianmn.github.io</span>
         </div>
 
         <div tw="flex items-center bg-neutral-800/50 rounded-xl px-4 py-2">
           <img src="https://i.imgur.com/VQfJ5Iz.png" tw="w-18 h-13" />
           <div tw="flex flex-col ml-4 border-l border-neutral-700/50 pl-4">
-            <span tw="text-neutral-400 font-semibold">David Cojocaru</span>
-            <span tw="text-neutral-400 text-sm">cojocaru-david</span>
+            <span tw="text-neutral-400 font-semibold">Pandian Muninathan</span>
+            <span tw="text-neutral-400 text-sm">pandianmn</span>
           </div>
         </div>
       </div>

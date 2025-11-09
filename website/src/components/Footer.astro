@@ -1,24 +1,6 @@
 ---
 import { Icon } from "astro-icon/components";
 import { FooterSocials } from "@data/socials";
-
-let factData = { fact: "Loading a purr-fect fact..." };
-try {
-  const controller = new AbortController();
-  const timeoutId = setTimeout(() => controller.abort(), 3000); // 3 second timeout to prevent long loading
-
-  const factResponse = await fetch("https://catfact.ninja/fact", {
-    headers: { Accept: "application/json" },
-    signal: controller.signal,
-  });
-
-  clearTimeout(timeoutId);
-  if (factResponse.ok) {
-    factData = await factResponse.json();
-  }
-} catch (error) {
-  console.error("Failed to fetch cat fact:", error);
-}
 ---
 
 <script>
@@ -54,29 +36,19 @@ try {
       <div class="flex flex-col items-center md:items-start">
         <div class="text-sm font-medium">
           2021 - <span id="year"></span> &copy;&nbsp;<a
-            href="https://github.com/cojocaru-david"
+            href="https://github.com/pandianmn"
             class="text-neutral-700 dark:text-neutral-300 hover:text-primary-600 dark:hover:text-primary-400 transition duration-300"
             target="_blank"
-            rel="noopener noreferrer">David Cojocaru</a
+            rel="noopener noreferrer">Pandian Muninathan</a
           >
         </div>
         <div class="text-xs mt-1 text-neutral-600 dark:text-neutral-400">
-          Open-source under MIT license <span id="random-emoji" class="ml-1"
+          Template by <a
+            href="https://github.com/cojocaru-david"
+            class="text-neutral-600 dark:text-neutral-400 hover:text-primary-600 dark:hover:text-primary-400 transition duration-300"
+            target="_blank"
+            rel="noopener noreferrer">David Cojocaru</a> • Open-source under MIT license <span id="random-emoji" class="ml-1"
           ></span>
-        </div>
-      </div>
-
-      <!-- Middle section for cat fact -->
-      <div class="w-full md:w-auto max-w-sm md:max-w-lg my-4 md:my-0">
-        <div
-          class="bg-neutral-100/30 dark:bg-neutral-800/30 p-3 rounded-lg shadow-sm hover:shadow transition duration-300 border border-neutral-200/30 dark:border-neutral-700/30"
-        >
-          <p class="text-xs italic mb-1 text-neutral-600 dark:text-neutral-400">
-            Random Cat Fact:
-          </p>
-          <p class="text-sm font-medium text-neutral-800 dark:text-neutral-200">
-            "{factData?.fact || "Loading a purr-fect fact..."}"
-          </p>
         </div>
       </div>
 
