@@ -1,129 +1,61 @@
-# cojocarudavid.me
+# Pandian Muninathan - Portfolio Website
 
-![Build Status](https://img.shields.io/github/actions/workflow/status/cojocaru-david/cojocarudavid.me/ci.yml)
-![License](https://img.shields.io/github/license/cojocaru-david/cojocarudavid.me)
-![Version](https://img.shields.io/github/package-json/v/cojocaru-david/cojocarudavid.me)
-![Stars](https://img.shields.io/github/stars/cojocaru-david/cojocarudavid.me?style=social)
+Personal portfolio website showcasing my experience as a Senior Data Engineer, professional journey, certifications, and technical projects.
 
-👋 Hi, I'm **David**, a 17-year-old coder from Romania. 🚀 Passionate about web development with **JavaScript, PHP, and React**. Linux enthusiast automating tasks with Bash.
+## 🚀 About
 
----
-
-## 🚀 Project Overview
-
-**cojocarudavid.me** is my **personal portfolio website**, built with **Astro.js** and styled using **Tailwind CSS**. It serves as a hub for my projects, blog posts, and personal updates.
-
-![Website Screenshot](.github/image.png)
-
----
-
-## 🌟 Features
-
-✅ **Blazing fast** - Optimized for performance and SEO.  
-🎨 **Modern & responsive** - Tailwind CSS for easy customization.  
-🔒 **Secure & reliable** - Follows best security practices.  
-📱 **Mobile-friendly** - Fully responsive across devices.  
-📝 **Blog support** - Share insights and experiences.
-
----
+This portfolio highlights my 8+ years of experience building scalable data extraction systems, web scraping frameworks, and LLM-powered processing pipelines.
 
 ## 🛠️ Tech Stack
 
-- **[Astro.js](https://astro.build/)** - Static site generator.
-- **[React.js](https://reactjs.org/)** - Used for components.
-- **[Tailwind CSS](https://tailwindcss.com/)** - Utility-first CSS framework.
-- **[TypeScript](https://www.typescriptlang.org/)** - Typed JavaScript at scale.
-- **[JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)** - Core language.
-- **[CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)** - Styles and layouts.
+- **[Astro.js](https://astro.build/)** - Static site generator
+- **[React.js](https://reactjs.org/)** - Interactive components
+- **[Tailwind CSS](https://tailwindcss.com/)** - Styling framework
+- **[TypeScript](https://www.typescriptlang.org/)** - Type-safe development
 
----
-
-## 📚 Setup & Installation
+## 📚 Local Development
 
 ### Prerequisites
 
-Ensure you have the following installed:
+- [Node.js](https://nodejs.org/) (v18 or higher)
+- npm or pnpm
 
-- [Node.js](https://nodejs.org/) and npm.
-- [Git](https://git-scm.com/).
+### Installation
 
-### Installation Steps
-
-1. **Clone the repository:**
-
-   ```sh
-   git clone https://github.com/cojocaru-david/cojocarudavid.me.git
-   ```
-
-2. **Navigate to the project directory:**
-
-   ```sh
-   cd cojocarudavid.me
-   ```
-
-3. **Install dependencies:**
-
+1. Install dependencies:
    ```sh
    npm install
    ```
 
-4. **Run the development server:**
+2. Run development server:
    ```sh
    npm run dev
    ```
 
----
+3. Build for production:
+   ```sh
+   npm run build
+   ```
 
-## 🎯 Usage
+4. Preview production build:
+   ```sh
+   npm run preview
+   ```
 
-### Development Mode
+## 📄 Pages
 
-Run the local development server:
+- **Home** - Introduction and skills overview
+- **Experience** - Professional journey (8+ years)
+- **Certifications** - Professional certifications and courses
+- **Projects** - Technical projects and contributions
+- **Blog** - Technical articles and insights
 
-```sh
-npm run dev
-```
+## 📧 Contact
 
-### Production Build
-
-Generate a production-ready build:
-
-```sh
-npm run build
-```
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Please follow the [contributing guidelines](CONTRIBUTING.md) before submitting changes.
+- Email: [pandian.m@hotmail.com](mailto:pandian.m@hotmail.com)
+- LinkedIn: [pandianmuninathan](https://www.linkedin.com/in/pandianmuninathan/)
+- GitHub: [@pandianmn](https://github.com/pandianmn)
 
 ---
 
-## 📄 License
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 💬 Contact
-
-📧 Email: [contact@cojocarudavid.me](mailto:contact@cojocarudavid.me)
-
-### 🌐 Connect with Me
-
-- [LinkedIn](https://www.linkedin.com/in/cojocaru-david)
-- [Blog](https://cojocarudavid.me/blog)
-
----
-
-## ⭐ Show Your Support
-
-If you like this project, give it a ⭐ on GitHub!
-
----
-
-## 🙏 Acknowledgments
-
-- [Astro.js](https://astro.build/)
-- [Tailwind CSS](https://tailwindcss.com/)
+**Template Credits:** Built using the excellent [cojocarudavid.me](https://github.com/cojocaru-david/cojocarudavid.me) template
