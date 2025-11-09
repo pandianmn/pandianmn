@@ -1,377 +1,88 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Navigation from '../components/Navigation.astro';
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import authorImage from "../assets/me.png";
+import Skills from "@components/Skills";
+import { title, description, country, author } from "../data/socials";
 ---
 
-<Layout title="Pandian Muninathan - Certified Azure Developer | Data Engineer">
-  <Navigation />
-
-  <main class="pt-16">
-    <!-- Hero Section -->
-    <section class="min-h-[85vh] flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-900 dark:to-gray-800">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div class="text-center space-y-8 animate-fade-in">
-          <h1 class="text-5xl md:text-7xl font-bold text-gray-900 dark:text-white">
-            Hi, I'm <span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Pandian Muninathan</span>
-          </h1>
-          <p class="text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Certified Microsoft Azure Developer Associate | Python, ETL & Data Engineering, Crawling Specialist | Former Co-Founder, Lapis Data Analytics | Agentic coding
-          </p>
-          <p class="text-lg text-gray-500 dark:text-gray-400 flex items-center justify-center gap-2">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-            </svg>
-            Chennai, Tamil Nadu, India
-          </p>
-          <div class="flex flex-wrap gap-4 justify-center pt-4">
-            <a href="#about" class="px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-all hover:scale-105 shadow-lg hover:shadow-xl">
-              About Me
-            </a>
-            <a href="#contact" class="px-8 py-3 bg-white dark:bg-gray-800 text-gray-900 dark:text-white border-2 border-gray-300 dark:border-gray-600 rounded-lg hover:border-blue-600 dark:hover:border-blue-600 transition-all hover:scale-105">
-              Get in Touch
-            </a>
-          </div>
+<Layout title={title}>
+  <main class="space-y-20">
+    <section class="relative">
+      <div
+        class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+      >
+        <div
+          class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-blue-700 to-blue-900 opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+          style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
+        >
         </div>
       </div>
-    </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-20 bg-white dark:bg-gray-900">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-4xl font-bold text-center mb-12 text-gray-900 dark:text-white">
-          Summary
-        </h2>
-        <div class="max-w-4xl mx-auto">
-          <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-            With over 13 years of diverse experience, I have spent the past 8 years specializing in process automation and software engineering, delivering scalable solutions that drive operational excellence. My recent focus has been on leveraging Python, SQL, and automation frameworks to streamline workflows, reduce manual effort, and enhance data-driven decision-making. I bring hands-on expertise in developing scripts, implementing system-based optimizations, and applying automation best practices to meet evolving business needs.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="py-20 bg-gray-50 dark:bg-gray-800">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-4xl font-bold text-center mb-16 text-gray-900 dark:text-white">
-          Professional Experience
-        </h2>
-
-        <div class="space-y-8">
-          <!-- Forage AI -->
-          <div class="bg-white dark:bg-gray-900 rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow border-l-4 border-blue-600">
-            <div class="mb-6">
-              <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Forage AI</h3>
-              <p class="text-gray-600 dark:text-gray-400">2 years 11 months</p>
-            </div>
-
-            <div class="space-y-6">
-              <div class="pl-4 border-l-2 border-gray-200 dark:border-gray-700">
-                <h4 class="text-xl font-semibold text-gray-800 dark:text-gray-200">Senior Data Engineer</h4>
-                <p class="text-gray-600 dark:text-gray-400 mb-3">January 2024 - Present (1 year 11 months) • Contract</p>
-                <ul class="space-y-2 text-gray-600 dark:text-gray-300">
-                  <li class="flex gap-2"><span class="text-blue-600">▸</span> Developed automated workflows for efficient data collection and ingestion</li>
-                  <li class="flex gap-2"><span class="text-blue-600">▸</span> Crafted a framework for web scraping, ensuring consistent data quality from various sources</li>
-                  <li class="flex gap-2"><span class="text-blue-600">▸</span> Implemented procedures to cleanse and rectify inconsistencies in datasets</li>
-                  <li class="flex gap-2"><span class="text-blue-600">▸</span> Leveraged NLP techniques to parse and extract relevant information from diverse sources</li>
-                  <li class="flex gap-2"><span class="text-blue-600">▸</span> Utilized Large Language Models for advanced data extraction from complex content</li>
-                  <li class="flex gap-2"><span class="text-blue-600">▸</span> Worked with cross-functional teams to align data needs with extraction solutions</li>
-                  <li class="flex gap-2"><span class="text-blue-600">▸</span> Regularly updated and refined data processing methodologies</li>
-                </ul>
-              </div>
-
-              <div class="pl-4 border-l-2 border-gray-200 dark:border-gray-700">
-                <h4 class="text-xl font-semibold text-gray-800 dark:text-gray-200">Data Engineer</h4>
-                <p class="text-gray-600 dark:text-gray-400 mb-3">January 2023 - January 2024 (1 year 1 month) • Contract</p>
-                <ul class="space-y-2 text-gray-600 dark:text-gray-300">
-                  <li class="flex gap-2"><span class="text-blue-600">▸</span> Data Automation: Developed automated workflows for efficient data collection and ingestion</li>
-                  <li class="flex gap-2"><span class="text-blue-600">▸</span> Web Scraping Framework: Crafted a framework for web scraping, ensuring consistent data quality</li>
-                  <li class="flex gap-2"><span class="text-blue-600">▸</span> Data Cleaning: Implemented procedures to cleanse and rectify inconsistencies in datasets</li>
-                  <li class="flex gap-2"><span class="text-blue-600">▸</span> NLP Integration: Leveraged NLP techniques to parse and extract relevant information</li>
-                  <li class="flex gap-2"><span class="text-blue-600">▸</span> LLMs Use: Utilized Large Language Models for advanced data extraction from complex content</li>
-                  <li class="flex gap-2"><span class="text-blue-600">▸</span> Collaboration: Worked with cross-functional teams to align data needs with extraction solutions</li>
-                  <li class="flex gap-2"><span class="text-blue-600">▸</span> Optimization: Regularly updated and refined data processing methodologies</li>
-                  <li class="flex gap-2"><span class="text-blue-600">▸</span> Documentation: Maintained detailed records of developed processes for future reference</li>
-                </ul>
-              </div>
-            </div>
+      <div class="relative mx-auto max-w-4xl">
+        <div class="sm:flex sm:items-center sm:justify-between sm:gap-12">
+          <div class="relative group overflow-hidden">
+            <Image
+              src={authorImage}
+              alt={title}
+              loading="eager"
+              width={320}
+              height={320}
+              class="h-auto w-40 sm:w-48 md:w-56 lg:w-64 object-cover bg-transparent"
+            />
           </div>
 
-          <!-- TCS -->
-          <div class="bg-white dark:bg-gray-900 rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow border-l-4 border-purple-600">
-            <div class="mb-6">
-              <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Tata Consultancy Services</h3>
-              <p class="text-gray-600 dark:text-gray-400">January 2022 - January 2023 (1 year 1 month)</p>
-            </div>
-
-            <div class="pl-4 border-l-2 border-gray-200 dark:border-gray-700">
-              <h4 class="text-xl font-semibold text-gray-800 dark:text-gray-200">Performance Engineer - SKY</h4>
-              <p class="text-gray-600 dark:text-gray-400 mb-3">Chennai, Tamil Nadu, India</p>
-              <ul class="space-y-2 text-gray-600 dark:text-gray-300">
-                <li class="flex gap-2"><span class="text-purple-600">▸</span> Engaged in the development and testing within the established framework for overseeing API performance</li>
-                <li class="flex gap-2"><span class="text-purple-600">▸</span> Acquired hands-on expertise with Prometheus and Grafana dashboards for performance monitoring</li>
-                <li class="flex gap-2"><span class="text-purple-600">▸</span> Monitored and maintained numerous CI/CD pipeline applications running containerized performance tests</li>
-                <li class="flex gap-2"><span class="text-purple-600">▸</span> Troubleshot application issues by analyzing logs and inspecting resources in containers/VMs</li>
-                <li class="flex gap-2"><span class="text-purple-600">▸</span> Collaborated closely with engineers and squads to test new services and enhance processes</li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Lapis Data Analytics -->
-          <div class="bg-white dark:bg-gray-900 rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow border-l-4 border-green-600">
-            <div class="mb-6">
-              <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Lapis Data Analytics</h3>
-              <p class="text-gray-600 dark:text-gray-400">January 2022 - January 2023 (1 year 1 month)</p>
-            </div>
-
-            <div class="pl-4 border-l-2 border-gray-200 dark:border-gray-700">
-              <h4 class="text-xl font-semibold text-gray-800 dark:text-gray-200">Co-founder | Lead Python Developer</h4>
-              <p class="text-gray-600 dark:text-gray-400 mb-3">Chennai, Tamil Nadu, India</p>
-              <ul class="space-y-2 text-gray-600 dark:text-gray-300">
-                <li class="flex gap-2"><span class="text-green-600">▸</span> Spearheaded the development of a multi-tenant, cloud-based analytics platform</li>
-                <li class="flex gap-2"><span class="text-green-600">▸</span> Designed and implemented scalable data pipelines using Python and SQL</li>
-                <li class="flex gap-2"><span class="text-green-600">▸</span> Led a team of developers in building custom data solutions for clients</li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Zudo Innovations/Edvoy -->
-          <div class="bg-white dark:bg-gray-900 rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow border-l-4 border-yellow-600">
-            <div class="mb-6">
-              <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Zudo Innovations / Edvoy</h3>
-              <p class="text-gray-600 dark:text-gray-400">1 year 1 month</p>
-            </div>
-
-            <div class="pl-4 border-l-2 border-gray-200 dark:border-gray-700">
-              <h4 class="text-xl font-semibold text-gray-800 dark:text-gray-200">Senior Data Analyst</h4>
-              <ul class="space-y-2 text-gray-600 dark:text-gray-300">
-                <li class="flex gap-2"><span class="text-yellow-600">▸</span> Analyzed complex datasets to drive business insights and decision-making</li>
-                <li class="flex gap-2"><span class="text-yellow-600">▸</span> Created data visualizations and reports for stakeholder communication</li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- MeritGroup -->
-          <div class="bg-white dark:bg-gray-900 rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow border-l-4 border-red-600">
-            <div class="mb-6">
-              <h3 class="text-2xl font-bold text-gray-900 dark:text-white">MeritGroup</h3>
-              <p class="text-gray-600 dark:text-gray-400">6 years 2 months</p>
-            </div>
-
-            <div class="space-y-6">
-              <div class="pl-4 border-l-2 border-gray-200 dark:border-gray-700">
-                <h4 class="text-xl font-semibold text-gray-800 dark:text-gray-200">Senior Software Engineer</h4>
-                <ul class="space-y-2 text-gray-600 dark:text-gray-300">
-                  <li class="flex gap-2"><span class="text-red-600">▸</span> Led software development projects and mentored junior developers</li>
-                </ul>
-              </div>
-              <div class="pl-4 border-l-2 border-gray-200 dark:border-gray-700">
-                <h4 class="text-xl font-semibold text-gray-800 dark:text-gray-200">Software Engineer</h4>
-                <ul class="space-y-2 text-gray-600 dark:text-gray-300">
-                  <li class="flex gap-2"><span class="text-red-600">▸</span> Developed and maintained software applications</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <!-- Reliance Communications -->
-          <div class="bg-white dark:bg-gray-900 rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow border-l-4 border-indigo-600">
-            <div class="mb-6">
-              <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Reliance Communications</h3>
-              <p class="text-gray-600 dark:text-gray-400">1 year 1 month</p>
-            </div>
-
-            <div class="pl-4 border-l-2 border-gray-200 dark:border-gray-700">
-              <h4 class="text-xl font-semibold text-gray-800 dark:text-gray-200">Customer Service Executive</h4>
-              <ul class="space-y-2 text-gray-600 dark:text-gray-300">
-                <li class="flex gap-2"><span class="text-indigo-600">▸</span> Provided exceptional customer support and resolved technical issues</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Learning Section (Education + Certifications) -->
-    <section id="learning" class="py-20 bg-white dark:bg-gray-900">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-4xl font-bold text-center mb-16 text-gray-900 dark:text-white">
-          Learning & Credentials
-        </h2>
-
-        <!-- Education -->
-        <div class="mb-16">
-          <h3 class="text-3xl font-bold mb-8 text-gray-800 dark:text-gray-200">Education</h3>
-          <div class="grid md:grid-cols-3 gap-6">
-            <div class="bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-700 rounded-lg p-6 hover:shadow-lg transition-all hover:scale-105">
-              <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Amrita Vishwa Vidyapeetham</h4>
-              <p class="text-blue-600 dark:text-blue-400 font-semibold mb-1">Master of Computer Applications - MCA</p>
-              <p class="text-gray-600 dark:text-gray-400">October 2023 - April 2026</p>
-            </div>
-
-            <div class="bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-700 rounded-lg p-6 hover:shadow-lg transition-all hover:scale-105">
-              <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-2">DRBCCC Hindu College</h4>
-              <p class="text-blue-600 dark:text-blue-400 font-semibold mb-1">Bachelor of Computer Applications</p>
-              <p class="text-gray-500 dark:text-gray-400 text-sm">Computer Applications</p>
-              <p class="text-gray-600 dark:text-gray-400">2009 - 2012</p>
-            </div>
-
-            <div class="bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-700 rounded-lg p-6 hover:shadow-lg transition-all hover:scale-105">
-              <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Vijayanta Model Higher Secondary School</h4>
-              <p class="text-blue-600 dark:text-blue-400 font-semibold mb-1">Higher Secondary Education</p>
-              <p class="text-gray-500 dark:text-gray-400 text-sm">Computer Science</p>
-              <p class="text-gray-600 dark:text-gray-400">2007 - 2009</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Professional Certifications -->
-        <div>
-          <h3 class="text-3xl font-bold mb-8 text-gray-800 dark:text-gray-200">Professional Certifications</h3>
-          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div class="group bg-white dark:bg-gray-800 rounded-lg p-6 border-2 border-gray-200 dark:border-gray-700 hover:border-blue-600 dark:hover:border-blue-600 transition-all hover:shadow-lg">
-              <div class="flex items-start gap-3">
-                <div class="p-2 bg-blue-100 dark:bg-blue-900 rounded-lg group-hover:scale-110 transition-transform">
-                  <svg class="w-6 h-6 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
-                  </svg>
-                </div>
-                <h4 class="text-lg font-semibold text-gray-900 dark:text-white">Generative AI Engineering with LLMs</h4>
-              </div>
-            </div>
-
-            <div class="group bg-white dark:bg-gray-800 rounded-lg p-6 border-2 border-gray-200 dark:border-gray-700 hover:border-purple-600 dark:hover:border-purple-600 transition-all hover:shadow-lg">
-              <div class="flex items-start gap-3">
-                <div class="p-2 bg-purple-100 dark:bg-purple-900 rounded-lg group-hover:scale-110 transition-transform">
-                  <svg class="w-6 h-6 text-purple-600 dark:text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
-                  </svg>
-                </div>
-                <h4 class="text-lg font-semibold text-gray-900 dark:text-white">Postgraduate Certificate in Big Data</h4>
-              </div>
-            </div>
-
-            <div class="group bg-white dark:bg-gray-800 rounded-lg p-6 border-2 border-gray-200 dark:border-gray-700 hover:border-green-600 dark:hover:border-green-600 transition-all hover:shadow-lg">
-              <div class="flex items-start gap-3">
-                <div class="p-2 bg-green-100 dark:bg-green-900 rounded-lg group-hover:scale-110 transition-transform">
-                  <svg class="w-6 h-6 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path>
-                  </svg>
-                </div>
-                <h4 class="text-lg font-semibold text-gray-900 dark:text-white">Microsoft Certified: Azure Developer Associate</h4>
-              </div>
-            </div>
-
-            <div class="group bg-white dark:bg-gray-800 rounded-lg p-6 border-2 border-gray-200 dark:border-gray-700 hover:border-yellow-600 dark:hover:border-yellow-600 transition-all hover:shadow-lg">
-              <div class="flex items-start gap-3">
-                <div class="p-2 bg-yellow-100 dark:bg-yellow-900 rounded-lg group-hover:scale-110 transition-transform">
-                  <svg class="w-6 h-6 text-yellow-600 dark:text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path>
-                  </svg>
-                </div>
-                <h4 class="text-lg font-semibold text-gray-900 dark:text-white">Google Cloud Computing Foundations Certificate</h4>
-              </div>
-            </div>
-
-            <div class="group bg-white dark:bg-gray-800 rounded-lg p-6 border-2 border-gray-200 dark:border-gray-700 hover:border-red-600 dark:hover:border-red-600 transition-all hover:shadow-lg">
-              <div class="flex items-start gap-3">
-                <div class="p-2 bg-red-100 dark:bg-red-900 rounded-lg group-hover:scale-110 transition-transform">
-                  <svg class="w-6 h-6 text-red-600 dark:text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
-                  </svg>
-                </div>
-                <h4 class="text-lg font-semibold text-gray-900 dark:text-white">Generative AI with Large Language Models</h4>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Languages -->
-        <div class="mt-16">
-          <h3 class="text-3xl font-bold mb-8 text-gray-800 dark:text-gray-200">Languages</h3>
-          <div class="grid md:grid-cols-2 gap-6 max-w-2xl">
-            <div class="bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg p-6 hover:shadow-lg transition-all hover:scale-105">
-              <h4 class="text-2xl font-bold mb-2">Tamil</h4>
-              <p class="text-blue-100">Native or Bilingual</p>
-            </div>
-            <div class="bg-gradient-to-r from-purple-500 to-pink-600 text-white rounded-lg p-6 hover:shadow-lg transition-all hover:scale-105">
-              <h4 class="text-2xl font-bold mb-2">English</h4>
-              <p class="text-purple-100">Professional Working</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-4xl font-bold text-center mb-8 text-gray-900 dark:text-white">
-          Let's Connect
-        </h2>
-        <p class="text-xl text-center text-gray-600 dark:text-gray-300 mb-12 max-w-2xl mx-auto">
-          Interested in collaboration or have a project in mind? Feel free to reach out!
-        </p>
-
-        <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-          <a href="tel:+917845208290" class="group bg-white dark:bg-gray-800 rounded-lg p-6 hover:shadow-xl transition-all hover:scale-105 border-2 border-transparent hover:border-blue-600">
-            <div class="flex flex-col items-center text-center gap-3">
-              <div class="p-3 bg-blue-100 dark:bg-blue-900 rounded-full group-hover:scale-110 transition-transform">
-                <svg class="w-8 h-8 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+          <div class="mt-8 sm:mt-0 sm:max-w-xl">
+            <h1
+              class="text-4xl font-bold text-zinc-800 dark:text-zinc-100 sm:text-5xl animate-fade-in"
+            >
+              {author}
+            </h1>
+            <div class="mt-4 flex items-center gap-2 animate-slide-right">
+              <span
+                class="inline-flex items-center rounded-full bg-blue-100 px-3 py-1 text-sm font-medium text-blue-800 dark:bg-blue-900 dark:text-blue-200 hover:bg-blue-200 dark:hover:bg-blue-800 transition-colors duration-300"
+              >
+                I'm from
+              </span>
+              <span class="inline-flex items-center gap-1 group">
+                {country}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 51.18 38.4"
+                  class="inline-block h-6 w-6 transition-transform duration-500 group-hover:rotate-12"
+                >
+                  <path
+                    d="M17.75 0v38.4H3.03C1.37 38.4 0 37.04 0 35.37V3.03C0 1.36 1.37 0 3.03 0h14.72z"
+                    fill="#002b7f"></path>
+                  <path fill="#fcd116" d="M37.45 0v38.4h-19.7V0h19.7z"></path>
+                  <path
+                    d="M37.45 38.4V0h14.72c1.67 0 3.03 1.36 3.03 3.03v32.33c0 1.67-1.37 3.03-3.03 3.03H37.45v.01z"
+                    fill="#ce1126"></path>
                 </svg>
-              </div>
-              <span class="text-gray-900 dark:text-white font-semibold">+91 7845208290</span>
+              </span>
             </div>
-          </a>
-
-          <a href="mailto:pandian.m@hotmail.com" class="group bg-white dark:bg-gray-800 rounded-lg p-6 hover:shadow-xl transition-all hover:scale-105 border-2 border-transparent hover:border-purple-600">
-            <div class="flex flex-col items-center text-center gap-3">
-              <div class="p-3 bg-purple-100 dark:bg-purple-900 rounded-full group-hover:scale-110 transition-transform">
-                <svg class="w-8 h-8 text-purple-600 dark:text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                </svg>
-              </div>
-              <span class="text-gray-900 dark:text-white font-semibold break-all">pandian.m@hotmail.com</span>
-            </div>
-          </a>
-
-          <a href="https://www.linkedin.com/in/pandianmuninathan" target="_blank" rel="noopener noreferrer" class="group bg-white dark:bg-gray-800 rounded-lg p-6 hover:shadow-xl transition-all hover:scale-105 border-2 border-transparent hover:border-blue-700">
-            <div class="flex flex-col items-center text-center gap-3">
-              <div class="p-3 bg-blue-100 dark:bg-blue-900 rounded-full group-hover:scale-110 transition-transform">
-                <svg class="w-8 h-8 text-blue-700 dark:text-blue-400" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                </svg>
-              </div>
-              <span class="text-gray-900 dark:text-white font-semibold">LinkedIn Profile</span>
-            </div>
-          </a>
+            <p
+              class="py-4 text-neutral-600 dark:text-neutral-400 text-md animate-fade-up"
+            >
+              {description}
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 dark:bg-black text-gray-400 py-8">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <p>&copy; 2025 Pandian Muninathan. All rights reserved.</p>
-      </div>
-    </footer>
+    <section class="relative" aria-labelledby="skills-title">
+      <h2
+        id="skills-title"
+        class="text-2xl font-bold text-neutral-900 dark:text-white animate-fade-in"
+      >
+        Skills & Technologies
+      </h2>
+      <p class="text-sm text-neutral-500 dark:text-neutral-400 animate-fade-up">
+        Here are some of the technologies I've been working with:
+      </p>
+
+      <Skills client:load />
+    </section>
   </main>
 </Layout>
-
-<style>
-  @keyframes fade-in {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  .animate-fade-in {
-    animation: fade-in 1s ease-out;
-  }
-</style>
