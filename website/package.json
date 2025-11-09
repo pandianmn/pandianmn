@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/pandianmn/pandianmn/issues"
   },
-  "homepage": "https://pandianmn.github.io/pandianmn",
+  "homepage": "https://pandianmn.github.io",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
