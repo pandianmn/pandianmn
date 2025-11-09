@@ -16,6 +16,7 @@ export default defineConfig({
   image: {
     service: sharpImageService(),
   },
-  site: "https://cojocarudavid.me",
+  site: "https://pandianmn.github.io",
+  base: "/pandianmn",
   integrations: [icon(), sitemap(), react()],
 });
