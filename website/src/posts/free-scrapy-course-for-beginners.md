@@ -3,7 +3,7 @@ title: "Free Interactive Scrapy Course for Beginners"
 slug: "free-scrapy-course-for-beginners"
 heroAlt: "Scrapy Tutorial Course"
 description: "Learn web scraping with Scrapy through a free, interactive hands-on course on Killercoda. Perfect for beginners looking to master data extraction with Python's most powerful web scraping framework."
-pubDate: 2024-01-15
+pubDate: 2025-11-10
 tags: ["scrapy", "web scraping", "python", "tutorial", "data extraction", "beginner"]
 ---
 
